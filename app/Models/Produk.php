@@ -9,5 +9,10 @@ class Produk extends Model
 {
     use HasFactory;
 
+    public $timestamps = false;
+
     protected $table = 'tblproduk';
+
+    protected $fillable = ['nama', 'deskripsi', 'harga'];
 }
+
